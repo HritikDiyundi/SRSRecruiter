@@ -32,6 +32,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { icon } from "@fortawesome/fontawesome-svg-core";
+import InterviewScheduler from "./Recruiter/InterviewScheduler.js";
 
 export default function Dashboard() {
   const navigate = useNavigate();
@@ -1508,11 +1509,13 @@ export default function Dashboard() {
       case "Job Listings":
         return <JobListing />;
       case "Interview Schedule":
-        return <p> Your interview schedule details..</p>;
+        return <InterviewScheduler />;
       case "Job Post":
         return <JobPost />;
       case "Recruiter Setting":
         return <RecruiterSetting />;
+      // case "Interview Schedule
+      //
 
       default:
         return <p>Select an option from the Sidebar</p>;
