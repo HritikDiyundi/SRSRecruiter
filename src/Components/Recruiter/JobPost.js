@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import ReactQuill from "react-quill";
-// import "react-quill/dist/quill.snow.css";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 import "./JobPost.css";
 
 const JobPost = ({ addJob }) => {
@@ -242,11 +242,11 @@ const JobPost = ({ addJob }) => {
       <h3>Description & Responsibilities</h3>
       <label>
         Description:
-        {/* <ReactQuill value={description} onChange={setDescription} /> */}
+        <ReactQuill value={description} onChange={setDescription} />
       </label>
       <label>
         Responsibilities:
-        {/* <ReactQuill value={responsibilities} onChange={setResponsibilities} /> */}
+        <ReactQuill value={responsibilities} onChange={setResponsibilities} />
       </label>
 
       {/* Submit Button */}

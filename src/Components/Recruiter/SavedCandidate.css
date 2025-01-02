@@ -92,6 +92,10 @@
     color: #666;
 }
 
+.candidate-profile-name h2 {
+    font-size: x-large;
+}
+
 .actions {
     display: flex;
     align-items: center;
@@ -172,7 +176,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -185,7 +189,8 @@
     background: white;
     padding: 2rem;
     border-radius: 10px;
-    width: 500px;
+    width: 800px;
+    height: auto;
     max-height: 90vh;
     overflow-y: auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -221,7 +226,8 @@
 .overlay-content h2,
 .overlay-content h3 {
     margin-top: 0;
-    color: #333;
+    color: rgb(0, 0, 0);
+    font-weight:300;
 }
 
 /* Overlay content paragraphs */
@@ -254,12 +260,116 @@
 }
 
 .social-icons a {
-    margin-right: 10px;
-    font-size: 1.2rem;
+    margin-right:30px;
+    /* padding:20x; */
+    /* font-size: 1.2rem; */
     color: #666;
     text-decoration: none;
+    /* margin-left:30px; */
 }
 
-.social-icons a:hover {
-    color: #007bff;
+.social-icons{
+    margin-left: 10px;
+}
+
+.candidate-profile{
+    /* background-color: red; */
+    display: flex;
+    /* flex: 2; */
+    justify-content:flex-start;
+    margin-bottom: 10px;
+    font-size:x-large;
+}
+
+.candidate-profile p{
+    font-size: medium;
+}
+
+.candidate-bio-1{
+    border-bottom: 2px solid #e4e5e8;
+    margin: 15px;
+    width: 80%;
+}
+
+.candidate-profile-image{
+    background-color: #767f8c;
+    padding: 30px;
+    border-radius: 50%;
+    margin: 15px;
+
+}
+
+.candidate-profile-name{
+    /* background-color: #007bff; */
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      
+        justify-content: flex-end;
+       
+}
+.candidate-profile-name h2{
+    font-size: larger;
+}
+
+.candidate-profile-section-1{
+    flex: 2;
+    margin-right: 10px;
+}
+
+.candidate-profile-name p{
+    margin-top: 0;
+}
+
+.candidate-profile-section{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+
+.candidate-profile-section {
+    
+}
+
+.h3{
+    /* color: red; */
+    font-size: 20px;
+}
+
+.additional-info{
+display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: self-end;
+    padding: 15px;
+
+}
+
+/* .additional-info-1{
+    border: 2px solid;
+} */
+
+.info-group-nation{
+    margin-left: 25px;
+}
+
+.Contact-info{
+    margin-top:30px;
+}
+
+.Contact-info ul{
+   /* background-color: red; */
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+
+}
+
+.Contact-info li{
+margin-bottom: 10px;
 }

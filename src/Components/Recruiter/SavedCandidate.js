@@ -290,58 +290,85 @@ const SavedCandidate = () => {
             <button className="close-button" onClick={closeOverlay}>
               &times;
             </button>
-            <h2>{selectedCandidate.name}</h2>
-            <p>{selectedCandidate.role}</p>
-
-            <h3>Biography</h3>
-            <p>{selectedCandidate.biography}</p>
-
-            <h3>Cover Letter</h3>
-            <p>{selectedCandidate.coverLetter}</p>
-
-            <section className="additional-info">
-              <div className="info-group">
-                <h4>Date of Birth</h4>
-                <p>{selectedCandidate.dateOfBirth}</p>
+            <div className="candidate-profile">
+              <p className="candidate-profile-image"></p>
+              <div className="candidate-profile-name">
+                <h2>{selectedCandidate.name}</h2>
+                <p>{selectedCandidate.role}</p>
               </div>
-              <div className="info-group">
-                <h4>Nationality</h4>
-                <p>{selectedCandidate.nationality}</p>
-              </div>
-              <div className="info-group">
-                <h4>Experience</h4>
-                <p>{selectedCandidate.experience} Years</p>
-              </div>
-              <div className="info-group">
-                <h4>Education</h4>
-                <p>{selectedCandidate.education}</p>
-              </div>
-            </section>
+            </div>
 
-            <h3>Contact Information</h3>
-            <ul>
-              <li>Website: {selectedCandidate.website || "Not provided"}</li>
-              <li>Location: {selectedCandidate.location}</li>
-              <li>Phone: {selectedCandidate.phone}</li>
-              <li>Email: {selectedCandidate.email}</li>
-            </ul>
+            <div className="candidate-bio-1"></div>
 
-            {selectedCandidate.socialMedia?.length > 0 && (
-              <div className="social-media">
-                <h4>Follow Me</h4>
-                <div className="social-icons">
-                  {selectedCandidate.socialMedia.map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.link}
-                      className={`icon ${social.platform}`}
-                    >
-                      {social.platform}
-                    </a>
-                  ))}
+            <section className="candidate-profile-section">
+              <div classname="candidate-profile-section-1">
+                <div className="candidate-bio">
+                  <h3 className="h3">Biography</h3>
+                  <p>{selectedCandidate.biography}</p>
+                </div>
+                <div className="candidate-bio-1"></div>
+
+                <div className="candidate-coverletter">
+                  <h3 className="h3">Cover Letter</h3>
+                  <p>{selectedCandidate.coverLetter}</p>
+                </div>
+                <div className="candidate-bio-1"></div>
+                <div className="candidate-socialmedia">
+                  {selectedCandidate.socialMedia?.length > 0 && (
+                    <div className="social-media">
+                      <h3 className="h3">Follow Me</h3>
+                      <div className="social-icons">
+                        {selectedCandidate.socialMedia.map((social, index) => (
+                          <a
+                            key={index}
+                            href={social.link}
+                            // className={`icon ${social.platform}`}
+                          >
+                            {social.platform}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
-            )}
+
+              <section className="additional-info">
+                {/* <div className="additional-info-1"> */}
+                <div className="info-group">
+                  <h3>DOB</h3>
+                  <p>{selectedCandidate.dateOfBirth}</p>
+                </div>
+                <div className="info-group-nation ">
+                  <h3>Nationality</h3>
+                  <p>{selectedCandidate.nationality}</p>
+                </div>
+                <div className="info-group">
+                  <h3>Experience</h3>
+                  <p>{selectedCandidate.experience} Years</p>
+                </div>
+                <div className="info-group">
+                  <h3>Education</h3>
+                  <p>{selectedCandidate.education}</p>
+                </div>
+                <div className="candidate-bio-1"></div>
+                {/* </div> */}
+                <div className="Contact-info">
+                  <h3>Contact Information</h3>
+                  <ul>
+                    <li>
+                      Website: {selectedCandidate.website || "Not provided"}
+                    </li>
+                    <div className="candidate-bio-1"></div>
+                    <li>Location: {selectedCandidate.location}</li>
+                    <div className="candidate-bio-1"></div>
+                    <li>Phone: {selectedCandidate.phone}</li>
+                    <div className="candidate-bio-1"></div>
+                    <li>Email: {selectedCandidate.email}</li>
+                  </ul>
+                </div>
+              </section>
+            </section>
           </div>
         </div>
       )}

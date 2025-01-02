@@ -65,12 +65,12 @@ export default function Dashboard() {
     savedJobsCount: 10,
     jobAlertsCount: 5,
     menuItems: [
-      { name: "My Board", icon: "🏠" },
-      { name: "Applied Jobs", icon: "📋" },
-      { name: "Job Suggestions", icon: "🎯" },
-      { name: "Job Alerts", icon: "🔔", count: "(20)" },
-      { name: "Saved Jobs", icon: "💾" },
-      { name: "My Profile", icon: "⚙️" },
+      // { name: "My Board", icon: "🏠" },
+      // { name: "Applied Jobs", icon: "📋" },
+      // { name: "Job Suggestions", icon: "🎯" },
+      // { name: "Job Alerts", icon: "🔔", count: "(20)" },
+      // { name: "Saved Jobs", icon: "💾" },
+      // { name: "My Profile", icon: "⚙️" },
 
       //recuriter side
 
